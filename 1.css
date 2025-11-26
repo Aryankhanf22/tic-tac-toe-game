@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+background-image: url(5531.jpg);
+background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Container for the game and button */
+.game-container {
+    background-color: rgb(1, 1, 1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tic Tac Toe Grid */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ab1010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #181818;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px;
+}
+
+.cell:hover {
+    background-color: #651a1a;
+}
+
+/* Color for Player X */
+.cell.x {
+    color: white; /* White for X */
+}
+
+/* Color for Player O */
+.cell.o {
+    color: white; /* White for O */
+}
+
+/* Status message and button */
+.status-container {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#status {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #c40505;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #de0f0f;
+}
+
+/* Animation for the winning cells */
+.winning-cell {
+    background-color: #1a1a6c;
+    animation: flip 0.5s ease-in-out;
+}
+
+/* Flip animation for winning cells */
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* New styles for the turn message */
+.turn-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    margin-top: 20px;
+}
