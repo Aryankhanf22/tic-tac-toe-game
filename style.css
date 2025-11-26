@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-background-image: url('./img.jpg');
+background-image: url(img.jpg);
 background-size: cover;
     display: flex;
     flex-direction: column;
@@ -133,6 +133,7 @@ button:hover {
     position: relative;
     margin-top: 20px;
 }
+
 
 
 
