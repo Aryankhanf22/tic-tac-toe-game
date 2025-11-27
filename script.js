@@ -80,3 +80,11 @@ function highlightWinningCells(pattern) {
 
 cells.forEach(cell => cell.addEventListener('click', handleCellClick));
 restartBtn.addEventListener('click', restartGame);
+
+
+
+
+
+
+
+
