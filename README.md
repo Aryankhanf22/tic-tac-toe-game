@@ -4,7 +4,7 @@ Test your strategy skills with this fun and interactive **Tic Tac Toe** game!
 Play against a friend and try to get three in a row to win 🎯
 
 🚀 **Live Demo**  
-👉 **Play Now:** https://aryankhan22.github.io/tic-tac-toe-game/
+👉 **Play Now:** https://aryankhanf22.github.io/tic-tac-toe-game/
 
 ---
 
